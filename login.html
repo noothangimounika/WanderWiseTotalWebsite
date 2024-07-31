@@ -119,15 +119,15 @@ loginForm.addEventListener("submit", function(event) {
         return;
     }
 
-    if (!/[A-Z]/.test(password) || !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    if (!/[A-Z]/.test(password)) {
         alert("Password must contain at least one uppercase letter and one special symbol.");
         return;
     }
 
-    // Successful login
-    //alert("Successfully logged in.");
+    // Successful login   || !/[!@#$%^&*(),.?":{}|<>]/.test(password)
+    alert("Successfully logged in.");
     loginPopup.classList.remove("show");
-    //window.location.href = "home.html";
+    window.location.href = "home.html";
 
 });
     </script>
